@@ -5,7 +5,7 @@ plugins {
     id 'maven'
 }
 group = 'com.github.farewell12345'
-version = '1.8-RELEASE'
+version = '2.0.2-RELEASE'
 sourceCompatibility = '8'
 targetCompatibility = '8'
 configurations {
@@ -16,11 +16,6 @@ configurations {
 jar {
     enabled = true
 }
-install{
-    build{
-
-    }
-}
 repositories {
     mavenCentral()
     maven { url 'https://jitpack.io' }
@@ -28,7 +23,7 @@ repositories {
 
 dependencies {
     compileOnly 'org.springframework.boot:spring-boot-starter-web'
-//    implementation 'com.github.farewell12345:UmbHttpResponse:1.9'
+    implementation 'com.github.farewell12345:UmbHttpResponse:2.0.1'
 //    compileClasspath 'com.gradle:gradle-enterprise-gradle-plugin:3.6.4'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
